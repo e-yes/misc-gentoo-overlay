@@ -92,6 +92,9 @@ src_prepare() {
 	# ???
 	epatch "${FILESDIR}"/0004-agent-Assert-possible-infinite-loop.patch
 
+	# I need God damn BLE API in 2016!!!
+	epatch "${FILESDIR}"/make_gatt_api_non_experimental.patch
+
 	if use cups; then
 		sed -i \
 			-e "s:cupsdir = \$(libdir)/cups:cupsdir = $(cups-config --serverbin):" \
