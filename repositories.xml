@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[e-yes-misc]]></name>
+    <description lang="en">
+      <![CDATA[My ebuilds :D]]>
+    </description>
+    <homepage>https://github.com/e-yes/misc-gentoo-overlay</homepage>
+    <owner type="person">
+      <email>alexey.roslyakov@gmail.com</email>
+      <name><![CDATA[Alexey Roslyakov]]></name>
+    </owner>
+    <source type="git" branch="master">https://github.com/e-yes/misc-gentoo-overlay.git</source>
+    <source type="git">https://github.com/e-yes/misc-gentoo-overlay.git</source>
+    <feed>https://github.com/e-yes/misc-gentoo-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
