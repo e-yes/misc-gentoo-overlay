@@ -1,6 +1,6 @@
 --- a/src/gatt-client.c
 +++ b/src/gatt-client.c
-@@ -565,20 +565,17 @@
+@@ -608,20 +608,17 @@
  }
  
  static const GDBusPropertyTable descriptor_properties[] = {
