@@ -12,8 +12,8 @@ QA_PREBUILT="*"
 DESCRIPTION="Project collaboration and tracking software for upwork.com"
 HOMEPAGE="https://www.upwork.com/"
 SRC_URI="
-	amd64? ( https://updates-desktopapp.upwork.com/binaries/v4_2_153_0_tkzkho5lhz15j08q/upwork_x86_64.rpm -> ${P}_x86_64.rpm )
-	x86? ( https://updates-desktopapp.upwork.com/binaries/v4_2_153_0_tkzkho5lhz15j08q/upwork_i386.rpm -> ${P}_i386.rpm )
+	amd64? ( https://updates-desktopapp.upwork.com/binaries/v5_1_0_647_g0nxmj7uab8q069t/upwork-5.1.0.647-1fc24.x86_64.rpm -> ${P}_x86_64.rpm )
+	x86? ( https://updates-desktopapp.upwork.com/binaries/v5_1_0_647_g0nxmj7uab8q069t/upwork-5.1.0.647-1fc24.i386.rpm -> ${P}_i386.rpm )
 "
 LICENSE="ODESK"
 SLOT="0"
@@ -30,10 +30,6 @@ RDEPEND="
 	x11-libs/gtk+:2
 	x11-libs/gtkglext
 "
-
-src_prepare() {
-	epatch "${FILESDIR}/${PN}-desktop.patch"
-}
 
 src_install() {
 	# Wrapper to the real executable
